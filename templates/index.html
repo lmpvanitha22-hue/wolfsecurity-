@@ -1,0 +1,112 @@
+WolfSecurity Cyber Defense
+Features Workflow Analyzer About
+Analyze URL
+CYBER DEFENSE PLATFORM
+
+Detect phishing links before they reach your users.
+Real-time threat detection powered by a dual machine-learning engine that flags suspicious URLs, checks known malicious domains, and explains the risk in plain language.
+
+Try the analyzer See how it works
+2 ML models
+100% Blacklist flagging
+Live Risk scoring
+Detected URL paypal-security-update.com
+Risk score 100%
+Known malicious domain
+Suspicious spelling pattern
+Brand impersonation
+WHY IT MATTERS
+
+Cyber awareness starts with smarter detection.
+🔗
+Suspicious URLs
+Phishing links often mimic real brands with small changes: paypa1.com, amazon-secure-login.net. Always inspect the full domain before clicking.
+
+📧
+Urgent Email Requests
+Attackers create fake urgency — "Your account will be suspended!" Legitimate companies never demand immediate action via email links.
+
+🔒
+HTTPS Is Not Enough
+A padlock icon only means the connection is encrypted, NOT that the site is trustworthy. Phishing sites use HTTPS too.
+
+📡
+IP Address in URL
+URLs like http://192.168.1.1/login are a red flag. Real websites use domain names, not raw IP addresses.
+
+@
+The "@" Trick
+A URL containing "@" redirects you to the part after it. http://safe.com@evil.com actually takes you to evil.com.
+
+🧠
+Think Before You Click
+When in doubt, navigate directly to the official website by typing the address yourself — never follow links in unsolicited messages.
+
+WORKFLOW
+
+How the detection engine works.
+1
+URL Input
+User enters any URL or domain
+→
+2
+Normalize
+Strip whitespace, add protocol if missing
+→
+3
+Blacklist Check
+Instant 100% phishing if domain is known-bad
+→
+4
+Feature Extraction
+URL length, hyphens, dots, IP flag, @ symbol…
+→
+5a
+Logistic Regression
+Calculates LR risk %
++
+5b
+Random Forest
+Calculates RF risk %
+→
+6
+Aggregate Score
+Average of both model probabilities
+→
+7
+Verdict
+SAFE · SUSPICIOUS · PHISHING
+* If a domain is found in the blacklist at step 3, steps 4–6 are skipped and PHISHING is returned immediately.
+
+LIVE ANALYZER
+
+Analyze one URL or a batch.
+Paste one URL per line
+https://example.com
+https://another-example.com
+
+ Analyze URLs
+Enter up to 1,000 URLs, one per line. Full URLs, bare domains, and IP-based links are supported.
+
+Batch results
+URL	Verdict	Risk	Logistic Regression	Random Forest
+Combined Risk Score —
+📈 Logistic Regression
+LR Risk Score —
+A linear probability model — fast, interpretable, and great at spotting clear structural patterns.
+
+Why LR flagged this:
+🌲 Random Forest
+RF Risk Score —
+An ensemble of decision trees — captures non-linear feature interactions and subtle phishing patterns.
+
+Why RF flagged this:
+Detection Insights
+MODEL EVALUATION
+
+Logistic Regression vs Random Forest
+Loading evaluation…
+Model	Accuracy	Precision	Recall	F1-Score
+WolfSecurity  |  Dual ML Engine  |  For educational & research use only
+
+This tool does not replace professional cybersecurity advice. Always verify links through official channels.
